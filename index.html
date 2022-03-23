@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Web App – Simple Interest Calculator</title>
     </head>
     <body>
         <div class="container">
@@ -14,8 +16,8 @@
                 </div>
                 <div class="value-wrapper">
                     <span class="text">Interest Rate</span>
-                    <input class="value" type="range" value="10.5" min="0" max="20" step="0.1" id="rate">
-                    <span id="rate-text">10.50%</span>
+                    <input class="value" type="range" value="10.25" min="1" max="20" step="0.25" id="rate">
+                    <span id="rate-text">10.25%</span>
                 </div>
                 <div class="value-wrapper">
                     <span class="text">No. of Years</span>
@@ -42,7 +44,7 @@
                     <span class="text">in the year <span class="value" id="result-year"></span></span>
                 </div>
             </div>
-            <span>© Everyone Can Get Rich</span>
+            <footer>© Everyone Can Get Rich</footer>
         </div>
     </body>
 </html>

@@ -12,6 +12,13 @@ function compute()
     var inputAmount = parseInt(document.getElementById("principal").value);
     var inputRate = parseFloat(document.getElementById("rate").value);
     var inputYears = parseInt(document.getElementById("years").value);
+
+    if (!inputAmount || inputAmount <= 0) {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
+        return;
+    }
+
     document.getElementById("result-amount").innerText = inputAmount.toString();
     document.getElementById("result-rate").innerText = inputRate.toString() + '%';
     document.getElementById("result-year").innerText = ((new Date()).getFullYear() + parseInt(inputYears)).toString();
