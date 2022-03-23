@@ -59,3 +59,7 @@ h1 {
 #years {
   flex: none;
 }
+
+#result-amount, #result-rate, #result-value, #result-year {
+  background-color: yellow;
+}
